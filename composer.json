@@ -16,7 +16,7 @@
     "wpackagist-plugin/reading-time-wp": "2.0.3",
     "wpackagist-plugin/zero-spam": "3.0.6",
     "wpackagist-plugin/wp-piwik": "1.0.19",
-    "wpackagist-plugin/wordpress-seo": "9.7",
+    "wpackagist-plugin/wordpress-seo": "9.7"
   },
     "extra": {
       "installer-paths": {
