@@ -1,0 +1,8 @@
+/plugins/*
+!plugins/achooandthesneezes
+!plugins/creative-writing-resources
+!plugins/goodreads-in-wordpress
+
+/themes/*
+!themes/octothorpe-child
+/vendor/
