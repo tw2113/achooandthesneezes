@@ -1,13 +1,9 @@
 {
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org/"
-    }
-  ],
-  "require":
-    {
-    "wpackagist-plugin/addthis": "2.6.0",
+  "repositories": [{
+    "type": "composer",
+    "url": "https://wpackagist.org/"
+  }],
+  "require": {
     "wpackagist-plugin/custom-post-type-ui": "1.6.1",
     "wpackagist-plugin/disable-comments": "1.9.0",
     "wpackagist-plugin/indieweb": "3.4.1",
@@ -18,11 +14,11 @@
     "wpackagist-plugin/wp-piwik": "1.0.19",
     "wpackagist-plugin/wordpress-seo": "9.7"
   },
-    "extra": {
-      "installer-paths": {
+  "extra": {
+    "installer-paths": {
       "plugins/{$name}/": ["type:wordpress-plugin"],
       "themes/{$name}/": ["type:wordpress-theme"],
       "mu-plugin/{$name}/": ["type:wordpress-muplugin"]
-      }
     }
+  }
 }
