@@ -1,0 +1,60 @@
+/**
+ * Theme Name: Octothorpe Child
+ * Theme URI: https://github.com/lsquo/octothorpe
+ * Description: Octothorpe is a theme for blogging.
+ * Version: 1.1.5
+ * Author: Lsquo
+ * Author URI: https://lsquo.com
+ * Text Domain: octothorpe
+ * Tags: one-column, accessibility-ready, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
+ * License: GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Template: octothorpe
+ */
+
+@import url('../octothorpe/style.css');
+
+::-moz-selection {
+	background: rgb(102, 6, 73);
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: rgb(102, 6, 73);
+	color: #fff;
+	text-shadow: none;
+}
+
+#linkcat-11 .blogroll,
+#linkcat-12 .blogroll {
+	column-count: 2;
+}
+
+aside {
+	margin-top: 125px;
+}
+
+aside .widget ul {
+	padding-left: 1rem;
+}
+
+aside .widget h2 {
+	font-size: 1.75rem;
+	margin-bottom: .5rem;
+}
+
+section .currently-reading p {
+	margin: 0;
+}
+
+.widget_links p {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+	#linkcat-11 .blogroll,
+	#linkcat-12 .blogroll {
+		column-count: 1;
+	}
+}
