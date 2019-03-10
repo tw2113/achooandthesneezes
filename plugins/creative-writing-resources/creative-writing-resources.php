@@ -52,10 +52,11 @@ function metaboxes() {
 	] );
 
 	$docstatus->add_field( [
-		'name'    => 'Document state',
-		'id'      => $prefix . 'docstate',
-		'type'    => 'select',
-		'options' => array(
+		'name'             => 'Document state',
+		'id'               => $prefix . 'docstate',
+		'type'             => 'select',
+		'show_option_none' => true,
+		'options'          => array(
 			'draft'         => 'Draft',
 			'editor-review' => 'Editor Review',
 			'final'         => 'Final',
