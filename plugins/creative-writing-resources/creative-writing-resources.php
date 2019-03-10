@@ -42,6 +42,25 @@ function metaboxes() {
 		'type'        => 'text_date',
 		'date_format' => get_option( 'date_format' ),
 	] );
+
+	$docstatus = new_cmb2_box( [
+		'id' => 'document-status',
+		'title' => 'Document Status',
+		'object_types' => ['post'],
+		'context' => 'side',
+		'priority' => 'high',
+	] );
+
+	$docstatus->add_field( [
+		'name'    => 'Document state',
+		'id'      => $prefix . 'docstate',
+		'type'    => 'select',
+		'options' => array(
+			'draft'         => 'Draft',
+			'editor-review' => 'Editor Review',
+			'final'         => 'Final',
+		),
+	] );
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\metaboxes' );
 
