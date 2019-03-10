@@ -7,11 +7,12 @@
  */
 
 wp_link_pages(
-	array(
-		'before'           => '<nav role="navigation">Chapter navigation:<br/>',
+	[
+		'before'           => '<nav role="navigation"><strong>Navigation:</strong><br/>',
 		'after'            => '</nav>',
 		'next_or_number'   => 'next',
-		'nextpagelink'     => __( 'Next', 'octothorpe' ),
-		'previouspagelink' => __( 'Previous', 'octothorpe' )
-	)
+		'nextpagelink'     => __( 'Next chapter', 'octothorpe' ),
+		'previouspagelink' => __( 'Previous chapter', 'octothorpe' ),
+		'separator'        => ' | ',
+	]
 );
