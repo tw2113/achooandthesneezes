@@ -14,6 +14,10 @@
 namespace tw2113;
 
 function matomo_analytics() {
+
+if ( is_user_logged_in() ) {
+	return;
+}
 ?>
 <!-- Matomo -->
 <script type="text/javascript">
