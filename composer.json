@@ -10,11 +10,11 @@
     "wpackagist-plugin/disable-comments": "1.9.0",
     "wpackagist-plugin/indieweb": "3.4.1",
     "wpackagist-plugin/wp-uf2": "1.1.0",
-    "wpackagist-plugin/query-monitor": "3.3.2",
+    "wpackagist-plugin/query-monitor": "3.3.4",
     "wpackagist-plugin/reading-time-wp": "2.0.3",
     "wpackagist-plugin/zero-spam": "3.0.6",
     "wpackagist-plugin/wp-piwik": "1.0.19",
-    "wpackagist-plugin/wordpress-seo": "9.7",
+    "wpackagist-plugin/wordpress-seo": "10.0.1",
     "wpackagist-theme/octothorpe": "1.1.5"
   },
   "extra": {
