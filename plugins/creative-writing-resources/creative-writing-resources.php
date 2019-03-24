@@ -56,11 +56,11 @@ function metaboxes() {
 		'id'               => $prefix . 'docstate',
 		'type'             => 'select',
 		'show_option_none' => true,
-		'options'          => array(
+		'options'          => [
 			'draft'         => 'Draft',
 			'editor-review' => 'Editor Review',
 			'final'         => 'Final',
-		),
+		],
 	] );
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\metaboxes' );
