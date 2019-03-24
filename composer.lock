@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aecbb48be416333e959fccb31958a5aa",
+    "content-hash": "96d6554334f5a59f51104e840e1f8298",
     "packages": [
         {
             "name": "composer/installers",
@@ -248,15 +248,15 @@
         },
         {
             "name": "wpackagist-plugin/reading-time-wp",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/reading-time-wp/",
-                "reference": "tags/2.0.3"
+                "reference": "tags/2.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.4.zip",
                 "reference": null,
                 "shasum": null
             },
