@@ -58,3 +58,15 @@ section .currently-reading p {
 		column-count: 1;
 	}
 }
+
+.widget_rss h2 {
+	overflow: hidden;
+}
+
+.widget_rss h2 a {
+	float: left;
+}
+
+.rsswidget img {
+	margin: 8px 8px 0 0;
+}
