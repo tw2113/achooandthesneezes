@@ -5,4 +5,5 @@
 
 /themes/*
 !themes/octothorpe-child
+/themes/octothorpe-child/node_modules
 /vendor/
