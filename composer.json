@@ -4,7 +4,6 @@
     "url": "https://wpackagist.org/"
   }],
   "require": {
-    "wpackagist-plugin/classic-editor": "1.4",
     "wpackagist-plugin/cmb2": "2.6.0",
     "wpackagist-plugin/custom-post-type-ui": "1.6.1",
     "wpackagist-plugin/disable-comments": "1.9.0",
