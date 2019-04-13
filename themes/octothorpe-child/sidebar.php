@@ -6,7 +6,7 @@
  * @subpackage Templates
  */
 
-if ( is_active_sidebar( 'footer' ) ) { ?>
+if ( is_active_sidebar( 'footer' ) && ! is_front_page() ) { ?>
 	<aside>
 		<?php dynamic_sidebar( 'footer' ); ?>
 	</aside>
