@@ -28,14 +28,14 @@ section .currently-reading p {
 
 .blogroll {
 
-  #linkcat-11 &,
-  #linkcat-12 & {
+  #audiofiction &,
+  #writers & {
     column-count: 2;
   }
 
   @media screen and (max-width: 768px) {
-    #linkcat-11 &,
-    #linkcat-12 & {
+    #audiofiction &,
+    #writers & {
       column-count: 1;
     }
   }
@@ -55,4 +55,7 @@ section .currently-reading p {
   img {
     margin: 8px 8px 0 0;
   }
+}
+li.linkcat {
+  list-style: none;
 }
