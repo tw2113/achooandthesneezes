@@ -39,6 +39,6 @@ if ( is_user_logged_in() ) {
 add_action( 'wp_footer', __NAMESPACE__ . '\matomo_analytics' );
 
 function blogroll_shortcode() {
-	return wp_list_bookmarks(['echo' => false]);
+	return wp_list_bookmarks( [ 'echo' => false ] );
 }
 add_shortcode( 'blogroll_shortcode', __NAMESPACE__ . '\blogroll_shortcode' );
