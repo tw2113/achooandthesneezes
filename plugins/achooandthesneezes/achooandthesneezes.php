@@ -40,11 +40,19 @@ add_action( 'wp_footer', __NAMESPACE__ . '\matomo_analytics' );
 
 function blogroll_shortcode( $atts ) {
 	$atts = shortcode_atts( [
-		'category' => ''
+		'category_name' => '',
+		'title_li' => '',
 	], $atts );
 
-	$output = "<div id='{$atts['category']}'>";
-	$output .= wp_list_bookmarks( [ 'category' => $atts['category'], 'echo' => false ] );
+	$output = "<div id='{$atts['category_name']}'>";
+	$output .= wp_list_bookmarks(
+		[
+			'category_name' => $atts['category_name'],
+			'categorize'    => false,
+			'echo'          => false,
+			'title_li'      => $atts['title_li'],
+		]
+	);
 	$output .= '</div>';
 
 	return $output;
