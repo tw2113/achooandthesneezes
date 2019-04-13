@@ -2,6 +2,7 @@
 !plugins/achooandthesneezes
 !plugins/creative-writing-resources
 !plugins/goodreads-in-wordpress
+!plugins/backupbuddy
 
 /themes/*
 !themes/octothorpe-child
