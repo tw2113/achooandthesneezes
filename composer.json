@@ -6,6 +6,7 @@
   "require": {
     "wpackagist-plugin/cmb2": "2.6.0",
     "wpackagist-plugin/custom-post-type-ui": "1.6.1",
+    "wpackagist-plugin/duplicate-post": "3.2.2",
     "wpackagist-plugin/disable-comments": "1.9.0",
     "wpackagist-plugin/indieweb": "3.4.1",
     "wpackagist-plugin/wp-uf2": "1.1.0",
