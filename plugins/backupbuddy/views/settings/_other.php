@@ -125,12 +125,7 @@ if ( '' != pb_backupbuddy::_GET( 'cleanup_now' ) ) {
 
 // Delete temporary files directory.
 if ( '' != pb_backupbuddy::_GET( 'delete_tempfiles_now' ) ) {
-	$temp_dir = backupbuddy_core::getTempDirectory();
-	$log_dir  = backupbuddy_core::getLogDirectory();
-	pb_backupbuddy::alert( 'Deleting all files contained within `' . $temp_dir . '` and `' . $log_dir . '`.' );
-	pb_backupbuddy::$filesystem->unlink_recursive( $temp_dir );
-	pb_backupbuddy::$filesystem->unlink_recursive( $log_dir );
-	pb_backupbuddy::anti_directory_browsing( $log_dir, false ); // Put log dir back in place.
+	backupbuddy_core::deleteAllDataFiles();
 }
 
 // Reset log.

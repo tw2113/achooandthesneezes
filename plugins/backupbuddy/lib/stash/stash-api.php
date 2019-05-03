@@ -11,6 +11,12 @@ final class BackupBuddy_Stash_API {
 		return BackupBuddy_Stash_Util::send_file( $username, $token, $file );
 	}
 
+	public static function get_upload_credentials( $username, $token, $file = false, $aws_api_version = false ) {
+		require_once( dirname( __FILE__ ) . '/stash-util.php' );
+
+		return BackupBuddy_Stash_Util::get_upload_credentials( $username, $token, $file, $aws_api_version );
+	}
+
 	public static function delete_files( $username, $token, $files ) {
 		$settings = compact( 'username', 'token' );
 		$params = compact( 'files' );

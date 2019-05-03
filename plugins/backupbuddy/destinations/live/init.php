@@ -123,6 +123,13 @@ class pb_backupbuddy_destination_live {
 		$settings['credentials'] = $response['credentials'];
 		$settings['directory'] = $response['prefix'];
 
+		if ( isset( $response['client_settings'] ) ) {
+			$settings['client_settings'] = $response['client_settings'];
+		}
+		if ( isset( $response['settings_override'] ) ) {
+			$settings['settings_override'] = $response['settings_override'];
+		}
+
 		if ( '' != $settings['_database_table'] ) { // Database file.
 			$settings['directory'] .= '/wp-content/uploads/backupbuddy_temp/SERIAL/';
 		} else { // Normal file.
@@ -236,6 +243,13 @@ class pb_backupbuddy_destination_live {
 		$settings['bucket'] = $response['bucket'];
 		$settings['credentials'] = $response['credentials'];
 
+		if ( isset( $response['client_settings'] ) ) {
+			$settings['client_settings'] = $response['client_settings'];
+		}
+		if ( isset( $response['settings_override'] ) ) {
+			$settings['settings_override'] = $response['settings_override'];
+		}
+
 		$directory = '';
 		if ( isset( $settings['directory'] ) && ( '' != $settings['directory'] ) ) {
 			$directory = $settings['directory'];
@@ -264,6 +278,14 @@ class pb_backupbuddy_destination_live {
 		$settings['stash_mode'] = '1'; // Stash is calling the s32/s33 destination.
 		$settings['bucket'] = $response['bucket'];
 		$settings['credentials'] = $response['credentials'];
+
+		if ( isset( $response['client_settings'] ) ) {
+			$settings['client_settings'] = $response['client_settings'];
+		}
+		if ( isset( $response['settings_override'] ) ) {
+			$settings['settings_override'] = $response['settings_override'];
+		}
+
 		$prefix = $response['prefix'] . '/' . $prefix;
 
 		if ( '' != $marker ) {
@@ -310,6 +332,13 @@ class pb_backupbuddy_destination_live {
 		$settings['bucket'] = $response['bucket'];
 		$settings['credentials'] = $response['credentials'];
 
+		if ( isset( $response['client_settings'] ) ) {
+			$settings['client_settings'] = $response['client_settings'];
+		}
+		if ( isset( $response['settings_override'] ) ) {
+			$settings['settings_override'] = $response['settings_override'];
+		}
+
 		$directory = '';
 		if ( isset( $settings['directory'] ) && ( '' != $settings['directory'] ) ) {
 			$directory = $settings['directory'];
@@ -344,31 +373,56 @@ class pb_backupbuddy_destination_live {
 
 		// Get credentials via LIVE action and cache them for future calls.
 		if ( false === ( $response = get_transient( self::LIVE_ACTION_TRANSIENT_NAME ) ) ) {
-			$stashAction = 'live';
-			$additionalParams = array();
-			$response = self::stashAPI( $settings, $stashAction, $additionalParams );
-			if ( ! is_array( $response ) ) {
+			require_once( pb_backupbuddy::plugin_path() . '/lib/stash/stash-api.php' );
+
+			$settings = self::_formatSettings( $settings );
+
+			$response = BackupBuddy_Stash_API::get_upload_credentials( $settings['itxapi_username'], $settings['itxapi_token'], false, $settings['destination_version'] );
+
+			if ( is_array( $response ) ) {
+				if ( pb_backupbuddy::$options['log_level'] == '3' ) { // Full logging enabled.
+					pb_backupbuddy::status( 'details', 'Live API live action response due to logging level: `' . print_r( $response, true ) . '`. Call params: `' . print_r( array(), true ) . ' `.' );
+				}
+
+				pb_backupbuddy::status( 'details', 'Caching Live action response data in transient `' . self::LIVE_ACTION_TRANSIENT_NAME . '`.' );
+
+				$cache_time = self::LIVE_ACTION_TRANSIENT_CACHE_TIME;
+
+				if ( isset( $response['expires'] ) && ( $response['expires'] - time() < self::LIVE_ACTION_TRANSIENT_CACHE_TIME ) ) {
+					// Ensure that the cache timeout is shorter than the expires timeout sent by the server. Remove an
+					// additional 30 minutes to ensure that running code doesn't attempt to use it when the access
+					// expires.
+					$cache_time = $response['expires'] - time() - ( 30 * MINUTE_IN_SECONDS );
+				}
+			} else {
 				$error = 'Error #344080: Unable to initiate Live send retrieval of manage data. Details: `' . $response . '`.';
 				pb_backupbuddy::status( 'error', $error );
 				backupbuddy_core::addNotification( 'live_error', 'BackupBuddy Stash Live Error', $error );
-				return false;
-			}
-			if ( pb_backupbuddy::$options['log_level'] == '3' ) { // Full logging enabled.
-				pb_backupbuddy::status( 'details', 'Live API live action response due to logging level: `' . print_r( $response, true ) . '`. Call params: `' . print_r( $additionalParams, true ) . ' `.' );
+
+				// Cache the response temporarily so that the site doesn't make continuous requests to the server when
+				// there is an error response due to a temporary server issue or a problem with the account.
+				$response = false;
+				$cache_time = 5 * MINUTE_IN_SECONDS;
 			}
 
-			// Calculate credential expiration for caching minus 1.5 hour for wiggle around DST and such issues.
-			//$cache_time = ( $response['expires'] - self::LIVE_ACTION_TRANSIENT_EXPIRE_WIGGLE );
-			$cache_time = self::LIVE_ACTION_TRANSIENT_CACHE_TIME; // Cache 6 hours.
 			set_transient( self::LIVE_ACTION_TRANSIENT_NAME, $response, $cache_time );
-			pb_backupbuddy::status( 'details', 'Caching Live action response data in transient `' . self::LIVE_ACTION_TRANSIENT_NAME . '`.' );
-		} else {
-			//pb_backupbuddy::status( 'details', 'Using cached Live credentials.' );
 		}
 
 		return $response;
-
 	} // End _get_live_action_response().
+
+
+
+	/* clear_cached_credentials()
+	 *
+	 * Purge cached credentials.
+	 *
+	 */
+	public static function clear_cached_credentials() {
+		delete_transient( self::LIVE_ACTION_TRANSIENT_NAME );
+		pb_backupbuddy::alert( 'Deleted cached Live credentials.' );
+
+	} // End clear_cached_credentials().
 
 
 

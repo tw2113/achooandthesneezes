@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the BackupBuddy package.
 msgid ""
 msgstr ""
-"Project-Id-Version: BackupBuddy 8.3.10.0\n"
+"Project-Id-Version: BackupBuddy 8.3.12.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/support/\n"
-"POT-Creation-Date: 2019-04-09 16:56:19+00:00\n"
+"POT-Creation-Date: 2019-05-02 21:03:33+00:00\n"
 "PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -172,7 +172,7 @@ msgstr ""
 
 #: _importbuddy/importbuddy/controllers/pages/server_tools.php:44
 #: controllers/pages/_backup-perform.php:814
-#: controllers/pages/server_tools.php:48 destinations/live/_manage.php:927
+#: controllers/pages/server_tools.php:48 destinations/live/_manage.php:889
 #: views/settings/_advanced.php:578 views/settings/_includeexclude.php:117
 msgid "Database"
 msgstr ""
@@ -800,11 +800,11 @@ msgid ""
 "out far too early. Please contact your host."
 msgstr ""
 
-#: classes/core.php:3265
+#: classes/core.php:3278
 msgid "Creating DAT (data) file snapshotting site & backup information."
 msgstr ""
 
-#: classes/core.php:3405
+#: classes/core.php:3418
 msgid "Compensating for SSL in siteurl."
 msgstr ""
 
@@ -970,7 +970,7 @@ msgid "Unable to login to FTP server. Bad user/pass."
 msgstr ""
 
 #: controllers/ajax/getMainLog.php:14 controllers/ajax/getRemoteApiLog.php:14
-#: destinations/live/_manage.php:407
+#: destinations/live/_manage.php:394
 msgid "Nothing has been logged."
 msgstr ""
 
@@ -1114,8 +1114,8 @@ msgstr ""
 msgid "Themes Backup"
 msgstr ""
 
-#: controllers/ajax/live_stash_files.php:22 destinations/live/_manage.php:189
-#: destinations/live/_manage.php:203
+#: controllers/ajax/live_stash_files.php:22 destinations/live/_manage.php:176
+#: destinations/live/_manage.php:190
 msgid ""
 "Remote file management has been disabled for Stash Live. Its files cannot be "
 "viewed & managed from within BackupBuddy. To re-enable you must Disconnect "
@@ -1199,10 +1199,10 @@ msgstr ""
 msgid "Fatal Error #9034.23443. Unable to access fileoptions data."
 msgstr ""
 
-#: controllers/ajax/restore_file_view.php:51 destinations/s32/init.php:810
-#: destinations/s32/init.php:827 destinations/s32/init.php:838
-#: destinations/s33/init.php:832 destinations/s33/init.php:849
-#: destinations/s33/init.php:860
+#: controllers/ajax/restore_file_view.php:51 destinations/s32/init.php:827
+#: destinations/s32/init.php:844 destinations/s32/init.php:855
+#: destinations/s33/init.php:849 destinations/s33/init.php:866
+#: destinations/s33/init.php:877
 msgid "Success."
 msgstr ""
 
@@ -1613,8 +1613,8 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: controllers/pages/_backup-perform.php:820 destinations/live/_manage.php:339
-#: destinations/live/_manage.php:971 destinations/live/_manage.php:978
+#: controllers/pages/_backup-perform.php:820 destinations/live/_manage.php:326
+#: destinations/live/_manage.php:933 destinations/live/_manage.php:940
 msgid "Files"
 msgstr ""
 
@@ -2334,7 +2334,7 @@ msgid ""
 "period of time some backup events may not be triggered."
 msgstr ""
 
-#: controllers/pages/scheduling.php:600 destinations/live/_manage.php:902
+#: controllers/pages/scheduling.php:600 destinations/live/_manage.php:864
 #: init_admin.php:268 views/widgets/dashboard.php:19
 msgid "Currently"
 msgstr ""
@@ -2878,7 +2878,7 @@ msgid "Setting Undetected"
 msgstr ""
 
 #: controllers/pages/server_info/_server_tests.php:1163
-#: destinations/live/_manage.php:524 destinations/live/_manage.php:532
+#: destinations/live/_manage.php:486 destinations/live/_manage.php:494
 #: destinations/live/_stats.php:92 destinations/live/_stats.php:102
 msgid "Enabled"
 msgstr ""
@@ -2976,7 +2976,7 @@ msgstr ""
 
 #: controllers/pages/server_info/database.php:55
 #: controllers/pages/server_info/database.php:66
-#: destinations/live/_manage.php:340 destinations/live/_viewtables.php:43
+#: destinations/live/_manage.php:327 destinations/live/_viewtables.php:43
 msgid "Size"
 msgstr ""
 
@@ -3204,7 +3204,7 @@ msgstr ""
 
 #: destinations/bootstrap.php:778
 #: destinations/live/live_periodic-shrunk.php:2956
-#: destinations/live/live_periodic.php:3030
+#: destinations/live/live_periodic.php:3106
 msgid "Fatal PHP error encountered:"
 msgstr ""
 
@@ -3413,9 +3413,9 @@ msgstr ""
 #: destinations/ftp/init.php:41 destinations/gdrive/init.php:225
 #: destinations/live/init.php:110 destinations/local/init.php:50
 #: destinations/rackspace/init.php:62 destinations/s3/init.php:60
-#: destinations/s32/init.php:201 destinations/s33/init.php:197
+#: destinations/s32/init.php:218 destinations/s33/init.php:214
 #: destinations/sftp/init.php:85 destinations/site/init.php:52
-#: destinations/stash2/init.php:74 destinations/stash3/init.php:74
+#: destinations/stash2/init.php:73 destinations/stash3/init.php:73
 msgid ""
 "Error #48933: This destination is currently disabled. Enable it under this "
 "destination's Advanced Settings."
@@ -3423,7 +3423,7 @@ msgstr ""
 
 #: destinations/dropbox2/init.php:200 destinations/ftp/init.php:218
 #: destinations/s3/init.php:421 destinations/s3/init.php:584
-#: destinations/s32/init.php:858 destinations/s33/init.php:880
+#: destinations/s32/init.php:875 destinations/s33/init.php:897
 msgid "Fatal Error #9034.84838. Unable to access fileoptions data."
 msgstr ""
 
@@ -4310,86 +4310,75 @@ msgid ""
 "create the Snapshot. This may take a few minutes..."
 msgstr ""
 
-#: destinations/live/_manage.php:166
-msgid ""
-"Enabled Live Files Backup and Restarted Periodic Process (only running if "
-"between steps or timed out)."
-msgstr ""
-
-#: destinations/live/_manage.php:177
-msgid ""
-"Enabled Live Files Backup and Restarted Periodic Process (forced to run now)."
-msgstr ""
-
-#: destinations/live/_manage.php:291 destinations/live/_manage.php:1011
+#: destinations/live/_manage.php:278 destinations/live/_manage.php:973
 msgid "Pending"
 msgstr ""
 
-#: destinations/live/_manage.php:294 destinations/live/_viewtables.php:19
+#: destinations/live/_manage.php:281 destinations/live/_viewtables.php:19
 msgid "Yes"
 msgstr ""
 
-#: destinations/live/_manage.php:296 destinations/live/_viewtables.php:17
+#: destinations/live/_manage.php:283 destinations/live/_viewtables.php:17
 msgid "No"
 msgstr ""
 
-#: destinations/live/_manage.php:341 destinations/live/_viewtables.php:41
+#: destinations/live/_manage.php:328 destinations/live/_viewtables.php:41
 msgid "Modified"
 msgstr ""
 
-#: destinations/live/_manage.php:342
+#: destinations/live/_manage.php:329
 msgid "Sent"
 msgstr ""
 
-#: destinations/live/_manage.php:343
+#: destinations/live/_manage.php:330
 msgid "Audited"
 msgstr ""
 
-#: destinations/live/_manage.php:344
+#: destinations/live/_manage.php:331
 msgid "Send Tries"
 msgstr ""
 
-#: destinations/live/_manage.php:345
+#: destinations/live/_manage.php:332
 msgid "Delete?"
 msgstr ""
 
-#: destinations/live/_manage.php:346
+#: destinations/live/_manage.php:333
 msgid "Hash"
 msgstr ""
 
-#: destinations/live/_manage.php:405
+#: destinations/live/_manage.php:392
 msgid ""
 "Live Logging has been disabled in Stash Live &#8594; Settings &#8594; "
 "Advanced."
 msgstr ""
 
-#: destinations/live/_manage.php:473
+#: destinations/live/_manage.php:435
 msgid ""
 "Live File Backup paused. It may take a moment for current processes to "
 "finish."
 msgstr ""
 
-#: destinations/live/_manage.php:476
+#: destinations/live/_manage.php:438
 msgid "Unpaused but not running now."
 msgstr ""
 
-#: destinations/live/_manage.php:484
+#: destinations/live/_manage.php:446
 msgid "Live File Backup has resumed."
 msgstr ""
 
-#: destinations/live/_manage.php:491
+#: destinations/live/_manage.php:453
 msgid "Live Database Backup paused."
 msgstr ""
 
-#: destinations/live/_manage.php:496
+#: destinations/live/_manage.php:458
 msgid "Live Database Backup resumed."
 msgstr ""
 
-#: destinations/live/_manage.php:516 destinations/live/_manage.php:520
+#: destinations/live/_manage.php:478 destinations/live/_manage.php:482
 msgid "Possible Problem Detected"
 msgstr ""
 
-#: destinations/live/_manage.php:516
+#: destinations/live/_manage.php:478
 msgid ""
 "One or more potential problems may have been detected. If you are "
 "experiencing problems with Stash Live the following information may help "
@@ -4400,105 +4389,105 @@ msgid ""
 "issue."
 msgstr ""
 
-#: destinations/live/_manage.php:520
+#: destinations/live/_manage.php:482
 msgid ""
 "Your PHP maximum execution time appears to be below 30 seconds, the default "
 "PHP runtime limit and industry standard. Please contact your host to have "
 "them increase your PHP maximum execution time to 30 seconds or greater."
 msgstr ""
 
-#: destinations/live/_manage.php:520
+#: destinations/live/_manage.php:482
 msgid "Current detected value PHP execution time limit:"
 msgstr ""
 
-#: destinations/live/_manage.php:527 destinations/live/_manage.php:535
+#: destinations/live/_manage.php:489 destinations/live/_manage.php:497
 #: destinations/live/_stats.php:89 destinations/live/_stats.php:99
 msgid "Paused"
 msgstr ""
 
-#: destinations/live/_manage.php:550 destinations/live/_manage.php:589
+#: destinations/live/_manage.php:512 destinations/live/_manage.php:551
 msgid "pending deletion"
 msgstr ""
 
-#: destinations/live/_manage.php:639
+#: destinations/live/_manage.php:601
 msgid ""
 "Oops, something may have gone wrong (most errors try to fix themselves after "
 "a bit of time)"
 msgstr ""
 
-#: destinations/live/_manage.php:665
+#: destinations/live/_manage.php:627
 msgid "Building Snapshot"
 msgstr ""
 
-#: destinations/live/_manage.php:918 destinations/live/_manage.php:962
+#: destinations/live/_manage.php:880 destinations/live/_manage.php:924
 msgid "Last Activity"
 msgstr ""
 
-#: destinations/live/_manage.php:922 destinations/live/_manage.php:966
+#: destinations/live/_manage.php:884 destinations/live/_manage.php:928
 msgid "Next Full Scan"
 msgstr ""
 
-#: destinations/live/_manage.php:933 destinations/live/_manage.php:977
-#: destinations/live/_manage.php:1016
+#: destinations/live/_manage.php:895 destinations/live/_manage.php:939
+#: destinations/live/_manage.php:978
 msgid "of"
 msgstr ""
 
-#: destinations/live/_manage.php:934
+#: destinations/live/_manage.php:896
 msgid "Tables"
 msgstr ""
 
-#: destinations/live/_manage.php:950 destinations/live/_manage.php:994
+#: destinations/live/_manage.php:912 destinations/live/_manage.php:956
 msgid "Resume"
 msgstr ""
 
-#: destinations/live/_manage.php:952 destinations/live/_manage.php:996
+#: destinations/live/_manage.php:914 destinations/live/_manage.php:958
 msgid "Pause"
 msgstr ""
 
-#: destinations/live/_manage.php:1005
+#: destinations/live/_manage.php:967
 msgid "Storage"
 msgstr ""
 
-#: destinations/live/_manage.php:1017
+#: destinations/live/_manage.php:979
 msgid "Used"
 msgstr ""
 
-#: destinations/live/_manage.php:1019
+#: destinations/live/_manage.php:981
 msgid "Storage Amount %s Currently Unavailable"
 msgstr ""
 
-#: destinations/live/_manage.php:1036
+#: destinations/live/_manage.php:998
 msgid "Need More Storage?"
 msgstr ""
 
-#: destinations/live/_manage.php:1037
+#: destinations/live/_manage.php:999
 msgid "Manage Remote Files"
 msgstr ""
 
-#. #-#-#-#-#  backupbuddy.pot (BackupBuddy 8.3.10.0)  #-#-#-#-#
+#. #-#-#-#-#  backupbuddy.pot (BackupBuddy 8.3.12.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: destinations/live/_manage.php:1044 helpers/privacy.php:21
+#: destinations/live/_manage.php:1006 helpers/privacy.php:21
 #: helpers/privacy.php:121 helpers/privacy.php:263
 msgid "BackupBuddy"
 msgstr ""
 
-#: destinations/live/_manage.php:1044
+#: destinations/live/_manage.php:1006
 msgid "requested new Stash Live snapshot files"
 msgstr ""
 
-#: destinations/live/_manage.php:1047
+#: destinations/live/_manage.php:1009
 msgid "View Last Snapshot Details"
 msgstr ""
 
-#: destinations/live/_manage.php:1051
+#: destinations/live/_manage.php:1013
 msgid "Need a more recent snapshot?"
 msgstr ""
 
-#: destinations/live/_manage.php:1052
+#: destinations/live/_manage.php:1014
 msgid "Create Manual Snapshot"
 msgstr ""
 
-#: destinations/live/_manage.php:1086
+#: destinations/live/_manage.php:1048
 msgid "Loading remote Snapshot files list..."
 msgstr ""
 
@@ -4676,13 +4665,24 @@ msgid "Waiting for pending file transfers to finish"
 msgstr ""
 
 #: destinations/live/live_periodic-shrunk.php:836
-#: destinations/live/live_periodic.php:864
+#: destinations/live/live_periodic.php:888
 msgid "Fatal Error #9034.328237. Unable to access fileoptions data."
 msgstr ""
 
 #: destinations/live/live_periodic-shrunk.php:920
-#: destinations/live/live_periodic.php:948
+#: destinations/live/live_periodic.php:972
 msgid "Starting database snapshot procedure."
+msgstr ""
+
+#: destinations/live/live_periodic.php:422
+msgid ""
+"Enabled Live Files Backup and Restarted Periodic Process (forced to run now)."
+msgstr ""
+
+#: destinations/live/live_periodic.php:425
+msgid ""
+"Enabled Live Files Backup and Restarted Periodic Process (only running if "
+"between steps or timed out)."
 msgstr ""
 
 #: destinations/local/_configure.php:19
@@ -4967,7 +4967,7 @@ msgid ""
 "+ directory) for this site yet."
 msgstr ""
 
-#: destinations/s32/init.php:383 destinations/s33/init.php:381
+#: destinations/s32/init.php:400 destinations/s33/init.php:398
 msgid "Fatal Error #9034.23788723. Unable to access fileoptions data."
 msgstr ""
 
@@ -5335,7 +5335,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: destinations/stash2/init.php:340 destinations/stash3/init.php:342
+#: destinations/stash2/init.php:339 destinations/stash3/init.php:341
 msgid "Upgrade storage"
 msgstr ""
 
@@ -9179,70 +9179,70 @@ msgstr ""
 msgid "Cleanup Procedure Status Log"
 msgstr ""
 
-#: views/settings/_other.php:189
+#: views/settings/_other.php:184
 msgid "Version History"
 msgstr ""
 
-#: views/settings/_other.php:200
+#: views/settings/_other.php:195
 msgid "Housekeeping & Troubleshooting"
 msgstr ""
 
-#: views/settings/_other.php:201
+#: views/settings/_other.php:196
 msgid ""
 "BackupBuddy automatically cleans up after itself on a regular basis. You may "
 "force various cleanup procedures to happen sooner or troubleshoot some "
 "uncommon issues using the tools below."
 msgstr ""
 
-#: views/settings/_other.php:205
+#: views/settings/_other.php:200
 msgid "Cleanup"
 msgstr ""
 
-#: views/settings/_other.php:206
+#: views/settings/_other.php:201
 msgid "Cleanup old/temp data & perform daily housekeeping now"
 msgstr ""
 
-#: views/settings/_other.php:208
+#: views/settings/_other.php:203
 msgid "Delete ALL data files (including resetting Stash Live)"
 msgstr ""
 
-#: views/settings/_other.php:212
+#: views/settings/_other.php:207
 msgid "Transients"
 msgstr ""
 
-#: views/settings/_other.php:213
+#: views/settings/_other.php:208
 msgid "Cleanup Transients (expiring & corrupt only)"
 msgstr ""
 
-#: views/settings/_other.php:215
+#: views/settings/_other.php:210
 msgid "Cleanup Transients (expiring, corrupt, & purge non-expiring)"
 msgstr ""
 
-#: views/settings/_other.php:218
+#: views/settings/_other.php:213
 msgid "Misc."
 msgstr ""
 
-#: views/settings/_other.php:221
+#: views/settings/_other.php:216
 msgid "Force Cancel of all backups & transfers"
 msgstr ""
 
-#: views/settings/_other.php:223
+#: views/settings/_other.php:218
 msgid "Show Extraneous Log (do NOT send to support)"
 msgstr ""
 
-#: views/settings/_other.php:225
+#: views/settings/_other.php:220
 msgid "Show Remote API Log (incoming calls)"
 msgstr ""
 
-#: views/settings/_other.php:234
+#: views/settings/_other.php:229
 msgid "Extraneous Log - Do not send to support unless asked"
 msgstr ""
 
-#: views/settings/_other.php:243 views/settings/_other.php:257
+#: views/settings/_other.php:238 views/settings/_other.php:252
 msgid "Clear Log"
 msgstr ""
 
-#: views/settings/_other.php:249
+#: views/settings/_other.php:244
 msgid "Remote API Log (incoming calls)"
 msgstr ""
 

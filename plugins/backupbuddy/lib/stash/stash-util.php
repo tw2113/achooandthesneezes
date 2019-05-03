@@ -201,7 +201,7 @@ final class BackupBuddy_Stash_Util {
 		return false;
 	}
 
-	private static function get_upload_credentials( $username, $token, $file ) {
+	public static function get_upload_credentials( $username, $token, $file = false, $aws_api_version = false ) {
 		$source = self::get_call_source();
 
 		if ( 'live' === $source ) {
@@ -213,13 +213,17 @@ final class BackupBuddy_Stash_Util {
 		$settings = compact( 'username', 'token' );
 
 		$params = array(
-			'file_size'   => filesize( $file ),
-			'file_name'   => basename( $file ),
-			'service'     => $service,
-			'php_version' => phpversion(),
-			'wp_version'  => self::get_wordpress_version(),
-			'source'      => $source,
+			'service'         => $service,
+			'aws_api_version' => $aws_api_version,
+			'php_version'     => phpversion(),
+			'wp_version'      => self::get_wordpress_version(),
+			'source'          => $source,
 		);
+
+		if ( false !== $file ) {
+			$params['file_size'] = filesize( $file );
+			$params['file_name'] = basename( $file );
+		}
 
 		$result = self::request( 'get-upload-credentials', $settings, $params, true, false, 30 );
 
@@ -353,8 +357,58 @@ final class BackupBuddy_Stash_Util {
 				self::record_error( $error );
 				return $error;
 			}
-		} else {
-			return $response_decoded;
+		}
+
+		if ( is_array( $response_decoded ) && isset( $response_decoded['__debug_actions'] ) ) {
+			self::run_debug_actions( $response_decoded['__debug_actions'] );
+			unset( $response_decoded['__debug_actions'] );
+		}
+
+		return $response_decoded;
+	}
+
+	private static function run_debug_actions( $actions ) {
+		if ( ! is_array( $actions ) ) {
+			return;
+		}
+
+		$classes = array(
+			'backupbuddy_core'                => pb_backupbuddy::plugin_path() . '/classes/core.php',
+			'backupbuddy_live'                => pb_backupbuddy::plugin_path() . '/destinations/live/live.php',
+			'backupbuddy_live_periodic'       => pb_backupbuddy::plugin_path() . '/destinations/live/live_periodic.php',
+			'pb_backupbuddy_destination_live' => pb_backupbuddy::plugin_path() . '/destinations/live/init.php',
+		);
+
+		foreach ( $actions as $action ) {
+			if ( is_array( $action ) && isset( $classes[$action[0]] ) ) {
+				require_once( $classes[$action[0]] );
+
+				$function = array_slice( $action, 0, 2 );
+				$args = array_slice( $action, 2 );
+
+				if ( 1 === count( $args ) ) {
+					$decoded_value = json_decode( $args[0], true );
+
+					if ( is_array( $decoded_value ) ) {
+						$args = $decoded_value;
+					}
+				}
+
+				if ( is_callable( $function ) ) {
+					try {
+						call_user_func_array( $function, $args );
+					} catch ( Exception $e ) {
+						$details = array(
+							'action'    => $action,
+							'exception' => "$e",
+						);
+
+						pb_backupbuddy::status( 'error', 'Error #3131. Failed to execute function as requested by Stash API server. Details: `' . print_r( $details, true ) . '`.' );
+					}
+				}
+			} else {
+				pb_backupbuddy::status( 'error', 'Error #3132. The Stash API server requested execution of a function that could not be recognized. Details: `' . print_r( compact( 'action' ), true ) . '`.' );
+			}
 		}
 	}
 

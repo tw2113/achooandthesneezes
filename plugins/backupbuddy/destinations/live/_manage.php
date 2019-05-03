@@ -151,30 +151,17 @@ if ( '' != pb_backupbuddy::_GET( 'live_action' ) ) {
 	} elseif ( 'uncache_credentials' == $action ) {
 
 		require_once( pb_backupbuddy::plugin_path() . '/destinations/live/init.php' );
-		delete_transient( pb_backupbuddy_destination_live::LIVE_ACTION_TRANSIENT_NAME );
-		pb_backupbuddy::alert( 'Deleted cached Live credentials.' );
+		pb_backupbuddy_destination_live::clear_cached_credentials();
 
 	} elseif ( 'restart_periodic' == $action ) {
 
-
-		pb_backupbuddy::$options['remote_destinations'][$destination_id]['pause_periodic'] = '0';
+		backupbuddy_live_periodic::restart_periodic();
 		$destination = pb_backupbuddy::$options['remote_destinations'][$destination_id]; // Update local var.
-		pb_backupbuddy::save();
-
-		backupbuddy_live::queue_step( 'daily_init', $args = array() );
-
-		pb_backupbuddy::alert( __( 'Enabled Live Files Backup and Restarted Periodic Process (only running if between steps or timed out).', 'it-l10n-backupbuddy' ) );
 
 	} elseif ( 'restart_periodic_force' == $action ) {
 
-
-		pb_backupbuddy::$options['remote_destinations'][$destination_id]['pause_periodic'] = '0';
+		backupbuddy_live_periodic::restart_periodic( true );
 		$destination = pb_backupbuddy::$options['remote_destinations'][$destination_id]; // Update local var.
-		pb_backupbuddy::save();
-
-		backupbuddy_live::queue_step( 'daily_init', $args = array(), $skip_run_now = false, $force_run_now  = true );
-
-		pb_backupbuddy::alert( __( 'Enabled Live Files Backup and Restarted Periodic Process (forced to run now).', 'it-l10n-backupbuddy' ) );
 
 	} elseif( 'restart_at_step' == $action ) {
 
@@ -440,33 +427,8 @@ if ( '' != pb_backupbuddy::_GET( 'live_action' ) ) {
 		<br><br>
 		<?php
 	} elseif ( 'delete_catalog' == $action ) {
-
-		$catalogFile = backupbuddy_core::getLogDirectory() . 'live/catalog-' . pb_backupbuddy::$options['log_serial'] . '.txt';
-		@unlink( $catalogFile );
-		sleep( 1 );
-		@unlink( $catalogFile );
-		sleep( 1 );
-		@unlink( $catalogFile );
-
-		if ( file_exists( $catalogFile ) ) {
-			pb_backupbuddy::alert( 'Error #3927273: Unable to delete catalog file `' . $catalogFile . '`. Check permissions or manually delete.' );
-		} else {
-			pb_backupbuddy::alert( 'Catalog deleted.' );
-		}
-
-		$stateFile = backupbuddy_core::getLogDirectory() . 'live/state-' . pb_backupbuddy::$options['log_serial'] . '.txt';
-		@unlink( $stateFile );
-		sleep( 1 );
-		@unlink( $stateFile );
-		sleep( 1 );
-		@unlink( $stateFile );
-
-		if ( file_exists( $stateFile ) ) {
-			pb_backupbuddy::alert( 'Error #434554: Unable to delete state file `' . $stateFile . '`. Check permissions or manually delete.' );
-		} else {
-			pb_backupbuddy::alert( 'State file deleted.' );
-		}
-
+		backupbuddy_live_periodic::delete_catalog();
+		backupbuddy_live_periodic::delete_state();
 	} elseif ( 'pause_periodic' == $action ) {
 		backupbuddy_api::setLiveStatus( $pause_continuous = '', $pause_periodic = true );
 		$destination = pb_backupbuddy::$options['remote_destinations'][$destination_id]; // Update local var.

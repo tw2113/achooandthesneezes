@@ -1981,3 +1981,7 @@
 	Enhancement: Adding filters for LiquidWeb UI improvements (Managed Press)
 8.3.11.0 - 2019-04-09 - Chris Jean
 	Bug Fix: Added support for a new BACKUPBUDDY_STASH_USE_LEGACY_UPLOAD define that may help some sites send files into Stash.
+8.3.12.0 - 2019-05-02 - Chris Jean, Josh Benham, Brian DiChiara
+	Enhancement: Added improved caching to the Stash Live system which can improve performance.
+	Enhancement: Added support for the Stash Live server to attempt to fix known issues that can prevent the service from functioning correctly.
+	Enhancement: Fixed error reporting in Stash Live to report error details from the AWS SDK API that were previously missing.

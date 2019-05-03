@@ -5,7 +5,6 @@
 class pb_backupbuddy_destination_stash3 { // Change class name end to match destination name.
 
 	const MINIMUM_CHUNK_SIZE = 5; // Minimum size, in MB to allow chunks to be. Anything less will not be chunked even if requested.
-	const API_URL = 'https://stash-api.ithemes.com';
 
 	public static $destination_info = array(
 		'name'			=>		'BackupBuddy Stash (v3)',

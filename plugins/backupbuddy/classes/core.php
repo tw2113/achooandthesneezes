@@ -3160,6 +3160,19 @@ class backupbuddy_core {
 
 	} // End clearLiveLogs()
 
+	/**
+	 * Delete All Data Files
+	 */
+	public static function deleteAllDataFiles() {
+		$temp_dir = self::getTempDirectory();
+		$log_dir  = self::getLogDirectory();
+		pb_backupbuddy::alert( 'Deleting all files contained within `' . $temp_dir . '` and `' . $log_dir . '`.' );
+		pb_backupbuddy::$filesystem->unlink_recursive( $temp_dir );
+		pb_backupbuddy::$filesystem->unlink_recursive( $log_dir );
+		pb_backupbuddy::anti_directory_browsing( $log_dir, false ); // Put log dir back in place.
+
+	} // End deleteAllDataFiles()
+
 
 	/**
 	 * Takes a base level to calculate tables from.  Then adds additional tables.  Then removes any exclusions. Returns array of final table listing to backup.
