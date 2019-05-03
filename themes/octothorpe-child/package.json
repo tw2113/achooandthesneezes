@@ -9,11 +9,11 @@
   "author": "",
   "license": "WTFPL",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-cli": "^2.1.0",
+    "gulp": "^4.0.1",
+    "gulp-cli": "^2.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.0",
     "gulp-csso": "^3.0.0",
-    "del": "^4.1.0"
+    "del": "^4.1.1"
   }
 }
