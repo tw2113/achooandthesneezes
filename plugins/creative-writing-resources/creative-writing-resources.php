@@ -19,7 +19,7 @@ function metaboxes() {
 	$cwr = new_cmb2_box( [
 		'id'           => 'creative-writing-resources',
 		'title'        => 'External resources for this piece',
-		'object_types' => [ 'post' ],
+		'object_types' => [ 'stories' ],
 		'context'      => 'normal',
 		'priority'     => 'high',
 	] );
@@ -44,11 +44,11 @@ function metaboxes() {
 	] );
 
 	$docstatus = new_cmb2_box( [
-		'id' => 'document-status',
-		'title' => 'Document Status',
-		'object_types' => ['post'],
-		'context' => 'side',
-		'priority' => 'high',
+		'id'           => 'document-status',
+		'title'        => 'Document Status',
+		'object_types' => [ 'stories' ],
+		'context'      => 'side',
+		'priority'     => 'high',
 	] );
 
 	$docstatus->add_field( [
