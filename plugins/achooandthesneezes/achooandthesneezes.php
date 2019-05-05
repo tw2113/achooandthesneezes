@@ -58,3 +58,14 @@ function blogroll_shortcode( $atts ) {
 	return $output;
 }
 add_shortcode( 'blogroll_shortcode', __NAMESPACE__ . '\blogroll_shortcode' );
+
+function stories_on_frontpage( $query ) {
+    if ( is_admin() || ! $query->is_main_query() ) {
+        return;
+    }
+
+    if ( $query->is_front_page() ) {
+		$query->set('post_type', [ 'post', 'stories' ] );
+    }
+}
+add_action( 'pre_get_posts', __NAMESPACE__ . '\stories_on_frontpage' );
