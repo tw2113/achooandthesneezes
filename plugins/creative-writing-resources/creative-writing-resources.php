@@ -62,6 +62,26 @@ function metaboxes() {
 			'final'         => 'Final',
 		],
 	] );
+
+	$group_field_id = $docstatus->add_field( [
+		'id'          => $prefix . 'related_drafts',
+		'type'        => 'group',
+		'description' => 'Related draft versions.',
+		'repeatable'  => false,
+		'options'     => [
+			'group_title'       => 'Drafts',
+			'add_button'        => 'Add another draft',
+			'remove_button'     => 'Remove draft',
+		],
+	] );
+
+	$docstatus->add_group_field( $group_field_id, array(
+		'name'       => 'Draft post',
+		'id'         => 'title',
+		'type'       => 'select',
+		'options_cb' => __NAMESPACE__ . '\cwr_story_ids',
+		'repeatable' => true,
+	) );
 }
 add_action( 'cmb2_admin_init', __NAMESPACE__ . '\metaboxes' );
 
@@ -99,4 +119,28 @@ function cwr_external_data_formatted( $post_id = 0 ) {
 		$link,
 		$data['posted_date']
 	);
+}
+
+function cwr_story_ids( $cmb2_field_object ) {
+	$args = [
+		'post_type'              => 'stories',
+		'post_status'            => 'publish',
+		'posts_per_page'         => -1,
+		'fields'                 => 'ids',
+		'post__not_in'          => [ $cmb2_field_object->object_id ],
+		'cache_results'          => false,
+		'update_post_term_cache' => false,
+		'update_post_meta_cache' => false,
+	];
+
+	$stories = new \WP_Query( $args );
+
+	$values['none'] = 'Select a story';
+	if ( $stories->have_posts() ) {
+		foreach ( $stories->posts as $story ) {
+			$values[ $story ] = get_the_title( $story );
+		}
+	}
+
+	return $values;
 }
