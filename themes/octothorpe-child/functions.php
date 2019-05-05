@@ -8,7 +8,7 @@ function achoo_setup() {
 add_action( 'after_setup_theme', __NAMESPACE__ . '\achoo_setup' );
 
 function achoo_assets() {
-	wp_enqueue_style( 'achoo', get_stylesheet_directory_uri() . '/assets/css/sneeze.css' );
+	wp_enqueue_style( 'achoo', get_stylesheet_directory_uri() . '/assets/css/sneeze.css', [ 'octothorpe-style' ] );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ .'\achoo_assets' );
 
