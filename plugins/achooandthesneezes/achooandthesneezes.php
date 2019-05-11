@@ -65,7 +65,11 @@ function stories_on_frontpage( $query ) {
     }
 
     if ( $query->is_front_page() ) {
-		$query->set('post_type', [ 'post', 'stories' ] );
+		$query->set( 'post_type', [ 'post', 'stories' ] );
     }
+
+    if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+		$query->set( 'post_type', [ 'post', 'stories' ] );
+	}
 }
 add_action( 'pre_get_posts', __NAMESPACE__ . '\stories_on_frontpage' );
