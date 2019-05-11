@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7b7bd1875a8b51380fe39b6130f762b",
+    "content-hash": "8d5da651c1c64c110cbc0c0f3a4595e7",
     "packages": [
         {
             "name": "composer/installers",
@@ -228,15 +228,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.3.4"
+                "reference": "tags/3.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -268,15 +268,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.1",
+            "version": "11.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.1"
+                "reference": "tags/11.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
