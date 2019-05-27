@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d5da651c1c64c110cbc0c0f3a4595e7",
+    "content-hash": "1440facfcae095bb405c18153ee95e68",
     "packages": [
         {
             "name": "composer/installers",
@@ -148,15 +148,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.6.1"
+                "reference": "tags/1.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.6.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.6.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -228,15 +228,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.3.5",
+            "version": "3.3.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.3.5"
+                "reference": "tags/3.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -268,15 +268,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.1.1",
+            "version": "11.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.1.1"
+                "reference": "tags/11.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
