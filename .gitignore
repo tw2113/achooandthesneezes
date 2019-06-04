@@ -6,5 +6,8 @@
 
 /themes/*
 !themes/octothorpe-child
+!themes/kleenexbox
+
 /themes/octothorpe-child/node_modules
+/themes/kleenexbox/node_modules
 /vendor/
