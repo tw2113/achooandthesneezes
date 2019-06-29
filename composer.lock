@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1d347bda1896c9cd61389bec96a40ac",
+    "content-hash": "ac57bcd76d92d35cb54dd6e82ea5492c",
     "packages": [
         {
             "name": "composer/installers",
@@ -248,15 +248,15 @@
         },
         {
             "name": "wpackagist-plugin/reading-time-wp",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/reading-time-wp/",
-                "reference": "tags/2.0.4"
+                "reference": "tags/2.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -268,15 +268,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.3",
+            "version": "11.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.3"
+                "reference": "tags/11.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -328,15 +328,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "3.0.6",
+            "version": "3.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/3.0.6"
+                "reference": "tags/3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.3.0.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.3.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
