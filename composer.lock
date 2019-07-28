@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b84beebb1ccaefaaf76605d8bfe261b0",
+    "content-hash": "0221f4df3712480172a4b6773eb9d8e3",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,6 +145,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/activitypub/"
+        },
+        {
+            "name": "wpackagist-plugin/autopost-to-mastodon",
+            "version": "3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autopost-to-mastodon/",
+                "reference": "tags/3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autopost-to-mastodon.3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autopost-to-mastodon/"
         },
         {
             "name": "wpackagist-plugin/cmb2",
