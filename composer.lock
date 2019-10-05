@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bef47660fe14cb7ae10e818bc8d18b8",
+    "content-hash": "ed78bbc3f69823cf1031985a42a6272f",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,15 +130,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.8.1",
+            "version": "0.8.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.8.1"
+                "reference": "tags/0.8.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.0.8.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -253,6 +253,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/indieweb/"
+        },
+        {
+            "name": "wpackagist-plugin/post-type-switcher",
+            "version": "3.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/post-type-switcher/",
+                "reference": "tags/3.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.3.2.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/post-type-switcher/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
