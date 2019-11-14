@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b064c81d537ef113a72157efd235980",
+    "content-hash": "b3acd113f8e0a7b5b40308f678c98eb4",
     "packages": [
         {
             "name": "composer/installers",
@@ -184,15 +184,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.6.2",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.6.2"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -310,15 +310,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.4",
+            "version": "12.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.4"
+                "reference": "tags/12.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
