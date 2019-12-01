@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3acd113f8e0a7b5b40308f678c98eb4",
+    "content-hash": "a9b81e6faf64b084c0a0f5d460289891",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,15 +130,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.8.3",
+            "version": "0.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.8.3"
+                "reference": "tags/0.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.8.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.0.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -274,15 +274,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.4.0"
+                "reference": "tags/3.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -292,15 +292,15 @@
         },
         {
             "name": "wpackagist-plugin/reading-time-wp",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/reading-time-wp/",
-                "reference": "tags/2.0.8"
+                "reference": "tags/2.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -310,15 +310,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.5",
+            "version": "12.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.5"
+                "reference": "tags/12.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.6.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
