@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea85c334110a4da07e3295f87aada81e",
+    "content-hash": "c56d38dfb227266f28161058509663ba",
     "packages": [
         {
             "name": "composer/installers",
@@ -238,15 +238,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb/",
-                "reference": "tags/3.4.1"
+                "reference": "tags/3.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
