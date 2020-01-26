@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c56d38dfb227266f28161058509663ba",
+    "content-hash": "4136de9b88009cd8be543fa0a11d775c",
     "packages": [
         {
             "name": "composer/installers",
@@ -148,15 +148,15 @@
         },
         {
             "name": "wpackagist-plugin/autopost-to-mastodon",
-            "version": "3.4",
+            "version": "3.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autopost-to-mastodon/",
-                "reference": "tags/3.4"
+                "reference": "tags/3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autopost-to-mastodon.3.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/autopost-to-mastodon.3.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -166,7 +166,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -174,7 +174,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1548045394"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1579634658"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -184,15 +184,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -310,15 +310,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "12.7.1",
+            "version": "12.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/12.7.1"
+                "reference": "tags/12.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
