@@ -48,6 +48,13 @@ function atom_links() {
 }
 add_action( 'wp_head', __NAMESPACE__ . '\atom_links' );
 
+function favicon() {
+?>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📔</text></svg>">
+<?php
+}
+add_action( 'wp_head', __NAMESPACE__ . '\favicon' );
+
 function add_atom_mime_support( $mimes ) {
 	$mimes = array_merge(
 		$mimes,
