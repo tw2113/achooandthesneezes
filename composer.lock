@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90c9b7bf0984a9aeb8f56ad45c081418",
+    "content-hash": "03ff185cf04d363d4b30a23565ad82ee",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,15 +132,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.9.1",
+            "version": "0.10.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.9.1"
+                "reference": "tags/0.10.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.0.10.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -186,15 +186,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.3"
+                "reference": "tags/1.7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -312,15 +312,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "13.1",
+            "version": "13.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/13.1"
+                "reference": "tags/13.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
