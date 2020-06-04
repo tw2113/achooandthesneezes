@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09cd7b28465be8d1a34eac7dbc9f9d61",
+    "content-hash": "5afb6e3e54176899efe78863f56a7fdf",
     "packages": [
         {
             "name": "composer/installers",
@@ -135,15 +135,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.10.0"
+                "reference": "tags/0.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.10.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.0.10.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.5.2",
+            "version": "3.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.5.2"
+                "reference": "tags/3.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "13.5",
+            "version": "14.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/13.5"
+                "reference": "tags/14.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.14.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
