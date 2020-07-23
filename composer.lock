@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7512ee721fb25e966aca8a9aba09d32f",
+    "content-hash": "fdc407b794140f97081a2bee39fe6895",
     "packages": [
         {
             "name": "composer/installers",
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "14.5",
+            "version": "14.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/14.5"
+                "reference": "tags/14.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.14.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.14.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -369,15 +369,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "3.1.1",
+            "version": "4.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/3.1.1"
+                "reference": "tags/4.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.3.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
