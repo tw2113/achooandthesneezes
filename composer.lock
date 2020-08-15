@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14a8825543d6271ade4996cfffe4f680",
+    "content-hash": "b613a506e8912e941b134670a3197618",
     "packages": [
         {
             "name": "composer/installers",
@@ -152,6 +152,24 @@
             "homepage": "https://wordpress.org/plugins/activitypub/"
         },
         {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "4.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1596958291"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
             "name": "wpackagist-plugin/autopost-to-mastodon",
             "version": "3.6",
             "source": {
@@ -207,7 +225,7 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "1.10.2",
+            "version": "1.10.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
@@ -215,7 +233,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1563798431"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1596006377"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -297,39 +315,21 @@
         },
         {
             "name": "wpackagist-plugin/reading-time-wp",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/reading-time-wp/",
-                "reference": "tags/2.0.9"
+                "reference": "tags/2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/reading-time-wp.2.0.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/reading-time-wp/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "14.6.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/14.6.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.14.6.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
@@ -369,15 +369,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.8.0",
+            "version": "4.9.13",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.8.0"
+                "reference": "tags/4.9.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.8.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.13.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
