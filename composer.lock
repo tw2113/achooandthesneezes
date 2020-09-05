@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3053079a280cd4f8766c39a72ff5c3c5",
+    "content-hash": "b83721b9d1b0f9b667a51bc54e870809",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,7 +153,7 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
@@ -161,7 +161,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1596958291"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1599248291"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -225,15 +225,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "1.10.3",
+            "version": "1.11.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "trunk"
+                "reference": "tags/1.11.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1596006377"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.1.11.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb",
-            "version": "3.4.2",
+            "version": "3.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb/",
-                "reference": "tags/3.4.2"
+                "reference": "tags/3.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -297,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.1",
+            "version": "3.6.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.1"
+                "reference": "tags/3.6.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -369,15 +369,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "4.9.13",
+            "version": "4.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/4.9.13"
+                "reference": "tags/4.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.9.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.4.10.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
