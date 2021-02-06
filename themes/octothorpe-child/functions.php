@@ -54,6 +54,7 @@ function favicon() {
 <?php
 }
 add_action( 'wp_head', __NAMESPACE__ . '\favicon' );
+add_action( 'admin_head', __NAMESPACE__ . '\favicon' );
 
 function add_atom_mime_support( $mimes ) {
 	$mimes = array_merge(
