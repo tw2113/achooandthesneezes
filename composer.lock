@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "624c89edf2193cf004ae7aed3804a5e6",
+    "content-hash": "3d985477fc2219d4d26dd4c73164dd45",
     "packages": [
         {
             "name": "composer/installers",
@@ -264,15 +264,15 @@
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
-            "version": "4.0.2",
+            "version": "4.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duplicate-post/",
-                "reference": "tags/4.0.2"
+                "reference": "tags/4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
