@@ -9,13 +9,13 @@
   "author": "",
   "license": "WTFPL",
   "devDependencies": {
-    "del": "^4.1.1",
+    "del": "^6.0.0",
     "fstream": ">=1.0.12",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
-    "gulp-csso": "^3.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-csso": "^4",
+    "gulp-sass": "^4",
     "gulp-uglify": "^3.0.0",
-    "tar": "^4.4.13"
+    "tar": "^6"
   }
 }
