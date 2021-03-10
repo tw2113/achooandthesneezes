@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "494ef658af8b2a76f2dcfa6d71c01ac0",
+    "content-hash": "e768219f8dab15ee38861c61bc1c0a2a",
     "packages": [
         {
             "name": "composer/installers",
@@ -210,7 +210,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.8.0",
+            "version": "2.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -218,7 +218,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1612800893"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1614826089"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -390,15 +390,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.0.6",
+            "version": "5.0.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.0.6"
+                "reference": "tags/5.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
