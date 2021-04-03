@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7373f05152a0d7ed090c9941d589e02",
+    "content-hash": "904553ef85634f1c7eb7109c1c848f0a",
     "packages": [
         {
             "name": "composer/installers",
@@ -228,15 +228,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.8.2",
+            "version": "1.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.8.2"
+                "reference": "tags/1.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.8.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -264,15 +264,15 @@
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duplicate-post/",
-                "reference": "tags/4.1.1"
+                "reference": "tags/4.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -390,15 +390,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.0.11",
+            "version": "5.0.12",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.0.11"
+                "reference": "tags/5.0.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.11.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.12.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
