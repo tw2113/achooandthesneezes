@@ -1,4 +1,6 @@
 {
+  "name": "tw2113/achoo",
+  "description": "My plugins",
   "repositories": [{
     "type": "composer",
     "url": "https://wpackagist.org/"
@@ -10,7 +12,7 @@
     "wpackagist-plugin/disable-comments": "2.1.1",
     "wpackagist-plugin/indieweb": "3.4.4",
     "wpackagist-plugin/wp-uf2": "1.1.0",
-    "wpackagist-plugin/query-monitor": "3.6.7",
+    "wpackagist-plugin/query-monitor": "3.7.1",
     "wpackagist-plugin/reading-time-wp": "2.0.10",
     "wpackagist-plugin/zero-spam": "5.0.12",
     "wpackagist-plugin/wp-piwik": "1.0.24",
