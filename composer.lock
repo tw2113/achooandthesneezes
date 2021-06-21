@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ed3855674973010acad4897eff15d63",
+    "content-hash": "6f983a47abe4906acac2d67c42e75f9e",
     "packages": [
         {
             "name": "composer/installers",
@@ -230,15 +230,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.9.1"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.zip?timestamp=1623897602"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -248,15 +248,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.1.1"
+                "reference": "tags/2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -284,15 +284,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb",
-            "version": "3.4.4",
+            "version": "3.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb/",
-                "reference": "tags/3.4.4"
+                "reference": "tags/3.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
