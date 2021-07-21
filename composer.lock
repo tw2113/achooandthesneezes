@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f983a47abe4906acac2d67c42e75f9e",
+    "content-hash": "0b72ef5a7382a83d63d35a00d1b9650f",
     "packages": [
         {
             "name": "composer/installers",
@@ -176,15 +176,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "4.1.3",
+            "version": "4.1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/4.1.3"
+                "reference": "tags/4.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.4.1.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.4.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -356,15 +356,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
-            "version": "1.0.24",
+            "version": "1.0.25",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-piwik/",
-                "reference": "tags/1.0.24"
+                "reference": "tags/1.0.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.24.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.25.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -435,5 +435,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
