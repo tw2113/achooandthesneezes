@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b72ef5a7382a83d63d35a00d1b9650f",
+    "content-hash": "ab974b774ffa2fb694ba92abcb710c51",
     "packages": [
         {
             "name": "composer/installers",
@@ -158,15 +158,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.12.0",
+            "version": "0.13.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.12.0"
+                "reference": "tags/0.13.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.12.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.0.13.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"

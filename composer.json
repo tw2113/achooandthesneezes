@@ -17,7 +17,7 @@
     "wpackagist-plugin/zero-spam": "5.0.12",
     "wpackagist-plugin/wp-piwik": "1.0.25",
     "wpackagist-theme/octothorpe": "1.1.5",
-    "wpackagist-plugin/activitypub": "0.12.0",
+    "wpackagist-plugin/activitypub": "0.13.1",
     "wpackagist-plugin/autopost-to-mastodon": "3.6.1",
     "wpackagist-plugin/post-type-switcher": "3.2.1",
     "wpackagist-plugin/autodescription": "4.1.4"
