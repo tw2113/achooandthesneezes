@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab974b774ffa2fb694ba92abcb710c51",
+    "content-hash": "2668af16983593de3b54569d4e368e44",
     "packages": [
         {
             "name": "composer/installers",
@@ -284,15 +284,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb",
-            "version": "3.4.5",
+            "version": "3.4.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb/",
-                "reference": "tags/3.4.5"
+                "reference": "tags/3.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb.3.4.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -392,15 +392,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.0.12",
+            "version": "5.0.13",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.0.12"
+                "reference": "tags/5.0.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.0.13.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
