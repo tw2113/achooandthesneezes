@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b0a434ee4921c86631cfbd9c0307794",
+    "content-hash": "983103c9eaf1e6ab4f6fc804b3854633",
     "packages": [
         {
             "name": "composer/installers",
@@ -205,7 +205,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.9.0",
+            "version": "2.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -213,7 +213,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1614826089"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1645540116"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -349,15 +349,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
-            "version": "1.0.26",
+            "version": "1.0.27",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-piwik/",
-                "reference": "tags/1.0.26"
+                "reference": "tags/1.0.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.26.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.27.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

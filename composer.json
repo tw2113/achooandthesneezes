@@ -6,7 +6,7 @@
     "url": "https://wpackagist.org/"
   }],
   "require": {
-    "wpackagist-plugin/cmb2": "2.9.0",
+    "wpackagist-plugin/cmb2": "2.10.1",
     "wpackagist-plugin/custom-post-type-ui": "1.10.2",
     "wpackagist-plugin/duplicate-post": "4.4",
     "wpackagist-plugin/disable-comments": "2.3.3",
@@ -15,7 +15,7 @@
     "wpackagist-plugin/query-monitor": "3.8.2",
     "wpackagist-plugin/reading-time-wp": "2.0.10",
     "wpackagist-plugin/zero-spam": "5.2.10",
-    "wpackagist-plugin/wp-piwik": "1.0.26",
+    "wpackagist-plugin/wp-piwik": "1.0.27",
     "wpackagist-theme/octothorpe": "1.1.5",
     "wpackagist-plugin/activitypub": "0.13.3",
     "wpackagist-plugin/autopost-to-mastodon": "3.6.1",
