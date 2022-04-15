@@ -11,3 +11,5 @@
 /themes/octothorpe-child/node_modules
 /themes/kleenexbox/node_modules
 /vendor/
+
+db.php
