@@ -3,7 +3,7 @@
 var csso = require('gulp-csso');
 var del = require('del');
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 var uglify = require('gulp-uglify');
 
 gulp.task('styles', done => {

@@ -14,8 +14,9 @@
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-csso": "^4",
-    "gulp-sass": "^5",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
+    "sass": "^1.50.0",
     "tar": "^6"
   }
 }
