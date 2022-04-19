@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd33befff411a5c22a43464a5a2b3f71",
+    "content-hash": "b06b5f1eff123faf7e708bbda0322050",
     "packages": [
         {
             "name": "composer/installers",
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.8.2",
+            "version": "3.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.8.2"
+                "reference": "tags/3.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.8.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.9.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -386,15 +386,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.3.2",
+            "version": "5.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.3.2"
+                "reference": "tags/5.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.3.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
