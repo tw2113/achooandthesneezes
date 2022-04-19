@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "sneeze.css",
+	"sources": [
+		"../sass/sneeze.scss"
+	],
+	"sourcesContent": [
+		"::-moz-selection,\n::selection {\n  background: rgb(102, 6, 73);\n  color: #fff;\n  text-shadow: none;\n}\n\naside {\n  margin-top: 125px;\n\n  .widget {\n    ul {\n      padding-left: 1rem;\n    }\n    h2 {\n      font-size: 1.75rem;\n      margin-bottom: .5rem;\n    }\n  }\n}\nsection .currently-reading p {\n  margin: 0;\n}\n\n.widget_links p {\n  margin-bottom: 0;\n}\n\n.blogroll {\n\n  #audiofiction &,\n  #writers & {\n    column-count: 2;\n  }\n\n  @media screen and (max-width: 768px) {\n    #audiofiction &,\n    #writers & {\n      column-count: 1;\n    }\n  }\n}\n\n.widget_rss {\n  h2 {\n    overflow: hidden;\n\n    a {\n      float: left;\n    }\n  }\n}\n\n.rsswidget {\n  img {\n    margin: 8px 8px 0 0;\n  }\n}\nli.linkcat {\n  list-style: none;\n}\n\na:link {\n  color: #4e6795;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,gBAAgB;AAChB,WAAW,CAAC;EACV,UAAU,EAAE,OAAe;EAC3B,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,IAAI;CAClB;;AAED,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,KAAK;CAWlB;;AAZD,AAII,KAJC,CAGH,OAAO,CACL,EAAE,CAAC;EACD,YAAY,EAAE,IAAI;CACnB;;AANL,AAOI,KAPC,CAGH,OAAO,CAIL,EAAE,CAAC;EACD,SAAS,EAAE,OAAO;EAClB,aAAa,EAAE,KAAK;CACrB;;AAGL,AAAA,OAAO,CAAC,kBAAkB,CAAC,CAAC,CAAC;EAC3B,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,aAAa,CAAC,CAAC,CAAC;EACd,aAAa,EAAE,CAAC;CACjB;;AAIC,AAAA,aAAa,CAFf,SAAS;AAGP,QAAQ,CAHV,SAAS,CAGI;EACT,YAAY,EAAE,CAAC;CAChB;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,aAAa,CARjB,SAAS;EASL,QAAQ,CATZ,SAAS,CASM;IACT,YAAY,EAAE,CAAC;GAChB;;;AAIL,AACE,WADS,CACT,EAAE,CAAC;EACD,QAAQ,EAAE,MAAM;CAKjB;;AAPH,AAII,WAJO,CACT,EAAE,CAGA,CAAC,CAAC;EACA,KAAK,EAAE,IAAI;CACZ;;AAIL,AACE,UADQ,CACR,GAAG,CAAC;EACF,MAAM,EAAE,WAAW;CACpB;;AAEH,AAAA,EAAE,AAAA,QAAQ,CAAC;EACT,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,CAAC,AAAA,KAAK,CAAC;EACL,KAAK,EAAE,OAAO;CACf"
+}

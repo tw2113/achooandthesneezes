@@ -4,19 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 assets/sass/sneeze.scss assets/css/sneeze.css",
+    "css-minify": "cleancss --format breaksWith=lf --source-map --source-map-inline-sources --output assets/css/sneeze.min.css assets/css/sneeze.css",
+    "styles": "npm run compile-styles && npm run css-minify"
   },
   "author": "",
   "license": "WTFPL",
   "devDependencies": {
-    "del": "^6.0.0",
-    "fstream": ">=1.0.12",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
-    "gulp-csso": "^4",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.50.0",
-    "tar": "^6"
+    "clean-css-cli": "^5.6.0",
+    "node-sass": "^7.0.1"
   }
 }
