@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a17fefeceae5b96b254553883fdbccc8",
+    "content-hash": "2f4c6a72f4dc3fcb67275265c83a69db",
     "packages": [
         {
             "name": "composer/installers",
@@ -206,6 +206,24 @@
             "homepage": "https://wordpress.org/plugins/autopost-to-mastodon/"
         },
         {
+            "name": "wpackagist-plugin/blogroll-block",
+            "version": "1.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/blogroll-block/",
+                "reference": "tags/1.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.3.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/blogroll-block/"
+        },
+        {
             "name": "wpackagist-plugin/cmb2",
             "version": "2.10.1",
             "source": {
@@ -243,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.3.6",
+            "version": "2.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.3.6"
+                "reference": "tags/2.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -387,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.4.1",
+            "version": "5.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.4.1"
+                "reference": "tags/5.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.4.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
