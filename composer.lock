@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8c0d1fb343963cf17c06cbf05a3316e",
+    "content-hash": "2f5d39a2eedf90f0c1fcc7d2c50ca8ee",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,15 +153,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.13.4",
+            "version": "0.14.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.13.4"
+                "reference": "tags/0.14.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.13.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.0.14.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -171,15 +171,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "4.2.6",
+            "version": "4.2.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/4.2.6"
+                "reference": "tags/4.2.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.4.2.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.4.2.7.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -189,15 +189,15 @@
         },
         {
             "name": "wpackagist-plugin/autopost-to-mastodon",
-            "version": "3.6.1",
+            "version": "3.6.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autopost-to-mastodon/",
-                "reference": "tags/3.6.1"
+                "reference": "tags/3.6.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autopost-to-mastodon.3.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/autopost-to-mastodon.3.6.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -243,15 +243,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.13.1",
+            "version": "1.13.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.13.1"
+                "reference": "tags/1.13.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -323,7 +323,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.zip?timestamp=1622334241"
+                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.zip?timestamp=1668590647"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -405,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/zero-spam",
-            "version": "5.4.3",
+            "version": "5.4.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zero-spam/",
-                "reference": "tags/5.4.3"
+                "reference": "tags/5.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.4.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/zero-spam.5.4.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
