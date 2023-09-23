@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5765719d6a01390b9c2c1a81d5abeaff",
+    "content-hash": "c4d22f2a2057223f6585f6f914fe84c4",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,15 +153,15 @@
         },
         {
             "name": "wpackagist-plugin/activitypub",
-            "version": "0.17.0",
+            "version": "1.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/activitypub/",
-                "reference": "tags/0.17.0"
+                "reference": "tags/1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/activitypub.0.17.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/activitypub.1.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -243,15 +243,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.13.6",
+            "version": "1.14.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.13.6"
+                "reference": "tags/1.14.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.14.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.4.3",
+            "version": "2.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.4.3"
+                "reference": "tags/2.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -297,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/indieweb",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/indieweb/",
-                "reference": "tags/4.0.0"
+                "reference": "tags/4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/indieweb.4.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/indieweb.4.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -333,15 +333,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.12.3",
+            "version": "3.13.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.12.3"
+                "reference": "tags/3.13.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.12.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.13.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -369,15 +369,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
-            "version": "1.0.28",
+            "version": "1.0.30",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-piwik/",
-                "reference": "tags/1.0.28"
+                "reference": "tags/1.0.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.28.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.30.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -448,5 +448,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
